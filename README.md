@@ -14,8 +14,11 @@ pnpm dev
 ```
 
 
-create this app with:
+##create this app with:
 react -> nextjs
 Firebase 
 tailwind
 
+####needed
+Firebase user config 
+firebase : https://console.firebase.google.com/
