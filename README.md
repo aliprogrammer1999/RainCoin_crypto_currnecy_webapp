@@ -2,7 +2,6 @@
 ## dev install package
 ```
 npm i
-
 ```
 
 First, run the development server:
