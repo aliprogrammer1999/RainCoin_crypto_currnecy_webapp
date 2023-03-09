@@ -3,6 +3,7 @@ import { motion, useCycle } from "framer-motion";
 import { Navbtn } from "@/components/Button";
 import Link from "next/link";
 import { GrBitcoin } from "react-icons/gr";
+import { BsGithub, BsInstagram, BsTelegram } from "react-icons/bs";
 import User from "../user/User";
 
 const navList = [
@@ -15,7 +16,7 @@ const navList = [
 const sidebar = {
   open: {
     width: 300,
-    padding: 30,
+    padding: "30px 13px",
     transition: {
       type: "spring",
       stiffness: 40,
@@ -79,7 +80,7 @@ const MobileNav = () => {
         }
       >
         <motion.div
-          className="w-[300px] fixed overflow-hidden flex flex-col justify-between py-12 items-center text-black top-0 right-0 h-full dark:bg-white bg-bg-main shadow-md dark:shadow-gray-300 shadow-gray-800"
+          className="w-[300px] fixed overflow-hidden flex flex-col justify-between  items-center text-black top-0 right-0 h-full dark:bg-white bg-bg-main shadow-md dark:shadow-gray-300 shadow-gray-800"
           variants={sidebar}
         >
           {/* navbar header logo  */}
@@ -92,7 +93,7 @@ const MobileNav = () => {
               <span className="text-4xl text-color-primery">C</span>oin
               <GrBitcoin className="text-4xl" />
             </h1>
-            <p className="text-xs mt-1 text-center dark:text-black text-white">
+            <p className="text-xs mt-1 px-3 text-center dark:text-black text-white">
               Lorem ipsum, unde ducimus id sapiente rerum incidunt voluptas
               optio iure.
             </p>
@@ -112,14 +113,26 @@ const MobileNav = () => {
               >
                 <Link
                   href={i.link_list}
-                  className="dark:text-black text-white bg-[#242424] dark:bg-gray-300 block w-full p-2 rounded-md text-center"
+                  className="dark:text-black text-white bg-[#242424] dark:bg-gray-300 block w-full p-4 font-bold rounded-md text-center"
                 >
                   {i.title}
                 </Link>
               </motion.li>
             ))}
           </motion.ul>
+          {/*user component */}
           <User />
+          <div className="dark:text-black text-white flex gap-3 font-bold text-2xl -mt-4">
+            <button>
+              <BsGithub />
+            </button>
+            <button>
+              <BsTelegram />
+            </button>
+            <button>
+              <BsInstagram />
+            </button>
+          </div>
         </motion.div>
       </div>
       {/* navbar Button  */}

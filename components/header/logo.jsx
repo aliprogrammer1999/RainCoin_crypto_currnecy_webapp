@@ -3,7 +3,7 @@ import { GrBitcoin } from "react-icons/gr";
 
 const Logo = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col select-none">
       <h1 className="flex items-center text-3xl font-bold">
         <span className="text-color-primery">R</span>
         <span className=" mt-2">

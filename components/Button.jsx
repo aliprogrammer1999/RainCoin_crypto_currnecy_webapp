@@ -7,18 +7,15 @@ export const ThemeBtn = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   return (
-    <motion.button
-      animate={{
-        rotate: theme === "dark" ? -180 : 0,
-      }}
+    <button
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
     >
       {theme === "dark" ? (
-        <BsFillSunFill className="text-yellow-400 z-0" />
+        <BsFillSunFill className="text-yellow-400" />
       ) : (
-        <BsFillMoonFill className="text-black z-0" />
+        <BsFillMoonFill className="text-black" />
       )}
-    </motion.button>
+    </button>
   );
 };
 
