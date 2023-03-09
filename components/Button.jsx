@@ -29,7 +29,7 @@ export const Navbtn = ({ toggle, navBtnEvent }) => {
       onClick={toggle}
       className={`${
         navBtnEvent ? "right-[287px] pl-[2px]" : "right-16"
-      } bg-color-primery top-1/2 -translate-y-1/2 absolute z-[999] transition-all duration-1000 rounded-full w-7 h-7 pt-1 flex justify-center items-center`}
+      } bg-color-primery top-1/2 -translate-y-1/2 absolute z-[9] transition-all duration-1000 rounded-full w-7 h-7 pt-1 flex justify-center items-center`}
     >
       <svg width="17" height="17" viewBox="0 0 23 23">
         <Path
