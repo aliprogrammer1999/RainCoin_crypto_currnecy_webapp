@@ -5,7 +5,6 @@ import DesktopHeader from "./DesktopHeader";
 import MarketDataHeader from "./MarketDetaHead";
 const Header = () => {
   const windowSize = useWindowSize();
-  console.log(windowSize);
   return (
     <header className="flex flex-col gap-3">
       <MarketDataHeader />

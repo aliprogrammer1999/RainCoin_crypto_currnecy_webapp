@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 const User = () => {
   return (
-    <div className="dark:bg-bg-main bg-gray-200 dark:text-white text-black w-full rounded-md py-4 px-3">
+    <div className="dark:bg-bg-main bg-gray-200 lg:dark:bg-gray-200 lg:bg-bg-main dark:text-white text-black lg:dark:text-black lg:text-white w-full rounded-md py-4 px-3">
       <div className="flex gap-3 mb-3">
         <Image
           src={userimg}
