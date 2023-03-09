@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbtn, ThemeBtn } from "../Button";
+import { ThemeBtn } from "../Button";
 import Logo from "./logo";
 import MobileNav from "./navbar/MobileNav";
 

@@ -3,6 +3,7 @@ import { motion, useCycle } from "framer-motion";
 import { Navbtn } from "@/components/Button";
 import Link from "next/link";
 import { GrBitcoin } from "react-icons/gr";
+import User from "../user/User";
 
 const navList = [
   { title: "Home", link_list: "/" },
@@ -78,7 +79,7 @@ const MobileNav = () => {
         }
       >
         <motion.div
-          className="w-[300px] z-0 fixed overflow-hidden flex flex-col justify-between py-12 items-center text-black top-0 right-0 h-full dark:bg-white bg-bg-main shadow-md dark:shadow-gray-300 shadow-gray-800"
+          className="w-[300px] fixed overflow-hidden flex flex-col justify-between py-12 items-center text-black top-0 right-0 h-full dark:bg-white bg-bg-main shadow-md dark:shadow-gray-300 shadow-gray-800"
           variants={sidebar}
         >
           {/* navbar header logo  */}
@@ -118,6 +119,7 @@ const MobileNav = () => {
               </motion.li>
             ))}
           </motion.ul>
+          <User />
         </motion.div>
       </div>
       {/* navbar Button  */}

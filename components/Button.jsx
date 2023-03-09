@@ -14,9 +14,9 @@ export const ThemeBtn = () => {
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
     >
       {theme === "dark" ? (
-        <BsFillSunFill className="text-yellow-400" />
+        <BsFillSunFill className="text-yellow-400 z-0" />
       ) : (
-        <BsFillMoonFill className="text-black" />
+        <BsFillMoonFill className="text-black z-0" />
       )}
     </motion.button>
   );
