@@ -19,8 +19,14 @@ react -> nextjs
 Firebase 
 tailwind
 
-#### needed
+
+### needed
 Firebase user config 
 ```
 https://console.firebase.google.com/
+```
+
+###CssTailwind
+```
+https://tailwindcss.com/docs/installation
 ```
