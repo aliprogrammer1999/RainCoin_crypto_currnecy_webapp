@@ -28,13 +28,13 @@ const User = () => {
       </div>
       <div className="flex flex-col gap-2 ">
         <motion.button
-          className="dark:bg-[#242424] bg-gray-400  py-1 rounded-sm w-full"
+          className="dark:bg-[#242424] bg-gray-400 py-1 dark:text-white text-black rounded-sm w-full"
           whileHover={{ scale: 1.04 }}
         >
           WatchList
         </motion.button>
         <motion.button
-          className="dark:bg-[#242424] bg-gray-400 py-1 rounded-sm w-full"
+          className="dark:bg-[#242424] bg-gray-400 py-1 dark:text-white text-black rounded-sm w-full"
           whileHover={{ scale: 1.04 }}
         >
           Logout

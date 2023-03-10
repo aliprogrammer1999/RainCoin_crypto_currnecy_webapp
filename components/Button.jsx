@@ -6,11 +6,14 @@ import { motion } from "framer-motion";
 export const ThemeBtn = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+  React.useEffect(() => {
+    setTheme(currentTheme);
+  }, [systemTheme]);
   return (
     <button
       onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
     >
-      {theme === "dark" ? (
+      {theme == "dark" ? (
         <BsFillSunFill className="text-yellow-400" />
       ) : (
         <BsFillMoonFill className="text-black" />

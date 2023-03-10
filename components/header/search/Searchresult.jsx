@@ -17,9 +17,11 @@ const Searchresult = () => {
           >
             <h1 className="flex items-center gap-2">
               <FaBitcoin />
-              <span className="capitalize font-bold">bitcoin</span>
+              <span className="capitalize dark:text-white text-black font-bold">
+                bitcoin
+              </span>
             </h1>
-            <span className="font-bold ">#1</span>
+            <span className="font-bold dark:text-white text-black">#1</span>
           </Link>
         </li>
       </ul>
