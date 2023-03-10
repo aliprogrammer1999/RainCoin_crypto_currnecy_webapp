@@ -4,7 +4,7 @@ import { BsFire } from "react-icons/bs";
 import { FaBitcoin } from "react-icons/fa";
 const Searchresult = () => {
   return (
-    <div className="mt-3 dark:text-black text-white">
+    <div className="mt-3 dark:text-black text-white shadow-lg">
       <h1 className="text-orange-500 flex gap-2 font-bold text-2xl">
         <BsFire />
         Tranding Coin
@@ -17,11 +17,13 @@ const Searchresult = () => {
           >
             <h1 className="flex items-center gap-2">
               <FaBitcoin />
-              <span className="capitalize dark:text-white text-black font-bold">
+              <span className="capitalize dark:text-white text-black lg:dark:text-white lg:text-white font-bold">
                 bitcoin
               </span>
             </h1>
-            <span className="font-bold dark:text-white text-black">#1</span>
+            <span className="font-bold dark:text-white text-black lg:dark:text-black lg:text-white">
+              #1
+            </span>
           </Link>
         </li>
       </ul>

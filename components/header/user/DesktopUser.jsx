@@ -14,7 +14,7 @@ const DesktopUser = () => {
           heigth={300}
           className={`w-8 h-8 object-cover hover:border ${
             openUser ? "border border-color-primery" : ""
-          } transition-all duration-400 rounded-full`}
+          } transition-all shadow duration-400 rounded-full`}
         />
       </button>
       <div

@@ -13,14 +13,14 @@ const DesktopSearch = () => {
       <input
         type="text"
         placeholder="Search every coin want... "
-        className="pr-2 pl-10 w-full py-[6px] z-[10] relative rounded-full"
+        className="pr-2 pl-10 w-full py-[6px] z-[10] relative rounded-full shadow"
         onFocus={() => setInputWidth(true)}
         onBlur={() => setInputWidth(false)}
       />{" "}
       <div
         className={`absolute ${
           inputWidth ? "h-max p-2 pt-5" : "h-0"
-        } w-full bg-black overflow-hidden top-3 rounded-b-md`}
+        } w-[97%] dark:bg-gray-200 dark:text-black bg-bg-main text-white overflow-hidden top-3 right-[5px] rounded-b-md`}
       >
         <Searchresult />
       </div>
